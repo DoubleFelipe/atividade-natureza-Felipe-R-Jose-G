@@ -1,0 +1,57 @@
+*{ /*comando reset do css */
+    margin: 0;
+    padding: 0px;
+    
+
+}
+header{
+    background-image: url(https://super.abril.com.br/wp-content/uploads/2019/06/site_temponatureza.png?resize=1080,565&crop=1);
+    background-size: cover ;
+    background-position: center;
+    height: 15vh;
+    
+}
+ul{
+    padding-right: 20px;
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+a:hover {
+  color: green;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 12px;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+}
+main {
+    max-width: auto;
+    margin: auto;
+}
+ul li a:hover{
+    border-bottom:  2px solid white;
+}
+.logo img{
+    width: 150px;
+    height: auto;
+    float: left;
+
+}
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h1 {
+    color: white;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 90px;
+
+}
