@@ -1,0 +1,153 @@
+*{ /*comando reset do css */
+    margin: 0;
+    padding: 0;
+    
+
+}
+header {
+    background-size: cover;
+    background-position: center;
+    height: 0vh;
+
+}
+
+ul {
+    padding-right: 20px;
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 12px;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+}
+
+main {
+    max-width: auto;
+    margin: auto;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    float: left;
+
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: white;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 90px;
+
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border: 1px solid white;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    border-radius: 15px;
+    background-color: aqua;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.footer-let {
+    padding: 10px;
+}
+
+.footer-let a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 12px;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px;
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    
+}
+.escrita-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.escrita-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #222;
+}
+
+.escrita-container p {
+  font-size: 1.1em;
+}
+article {
+  flex: 2;
+  padding: 20px;
+}
+
+aside {
+  font-size: 25px;
+  flex: 1; 
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+body{
+    grid-template-areas: "aside container container";
+}
