@@ -1,29 +1,41 @@
-*{ /*comando reset do css */
+* {
+    /*comando reset do css */
     margin: 0;
     padding: 0px;
-    
+
 
 }
-header{
+
+header {
+
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.legal {
     background-image: url(https://super.abril.com.br/wp-content/uploads/2019/06/site_temponatureza.png?resize=1080,565&crop=1);
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     height: 15vh;
-    
 }
-ul{
+
+ul {
     padding-right: 20px;
     float: right;
     list-style-type: none;
     margin-top: 25px;
 }
-a:hover {
-  color: green;
-}
-ul li{
+
+ul li {
     display: inline-block;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: white;
     padding: 0px 12px;
@@ -34,10 +46,14 @@ main {
     max-width: auto;
     margin: auto;
 }
-ul li a:hover{
-    border-bottom:  2px solid white;
+
+
+
+ul li a:hover {
+    border-bottom: 2px solid white;
 }
-.logo img{
+
+.logo img {
     width: 150px;
     height: auto;
     float: left;
@@ -54,4 +70,166 @@ ul li a:hover{
     font-family: "Edu NSW ACT Cursive", cursive;
     font-size: 90px;
 
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border: 1px solid white;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    border-radius: 15px;
+    background-color: aqua;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.footer-let {
+    padding: 10px;
+}
+
+.footer-let a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 12px;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+}
+
+.form {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.escrita-container {
+    width: 700px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form {
+    width: 700px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.escrita-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #222;
+
+}
+
+.escrita-container p {
+    font-size: 15px;
+}
+
+form {
+    max-width: 800px;
+    max-height: 100vh;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    max-width: 1000px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    width: 600px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
 }
